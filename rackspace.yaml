@@ -1,0 +1,36 @@
+schema-version: 1.0.0
+application-family: Configuration Management
+application-name: Chef Server
+application-version: 12
+flavor: Single Linux server
+flavor-weight: 1
+reach-info:
+  tattoo: https://0b5294b243620310a700-e388a7f3aba385a925111b1fc6f680d4.ssl.cf2.rackcdn.com/chef-tattoo.png
+  icon-20x20: https://0b5294b243620310a700-e388a7f3aba385a925111b1fc6f680d4.ssl.cf2.rackcdn.com/chef-icon-20x20.png
+hidden_outputs:
+  - private_key
+abstract: |
+  Chef Server is the centralised hub that each Chef client will connect to in
+  order to retrieve configuration details.
+instructions: |
+  #### Managing Chef Server
+  Check out the [Manage the Chef
+  Server](http://docs.chef.io/server/#manage-the-chef-server)
+  documentation provided by OpsCode for more information about managing users,
+  keys, and clients. If this is your first time using Chef Server 12,
+  instructions for adding users and organizations via command line can be
+  found [here](http://docs.chef.io/server/server_orgs.html). For security
+  purposes, we have disabled user setup and signup via the web interface.
+
+  #### Logging In via SSH
+  The private key provided in the passwords section can be used to login as
+  root via SSH.  We have an article on how to use these keys with [Mac OS X and
+  Linux](http://www.rackspace.com/knowledge_center/article/logging-in-with-a-ssh-private-key-on-linuxmac)
+  as well as [Windows using
+  PuTTY](http://www.rackspace.com/knowledge_center/article/logging-in-with-a-ssh-private-key-on-windows).
+description: |
+  Single Linux server with the
+  [Open Source Chef Server](http://docs.chef.io/open_source/). All supporting
+  services such as [PostgreSQL](http://www.postgresql.org/),
+  [Nginx](http://wiki.nginx.org/Main) and
+  [RabbitMQ](http://www.rabbitmq.com/) are bundled in with this installation.
