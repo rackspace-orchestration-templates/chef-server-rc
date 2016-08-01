@@ -1,11 +1,14 @@
 heat_template_version: 2013-05-23
 
 description: |
+  ####Single Linux server - RCv3
   Single Linux server with the
   [Chef Server](http://docs.chef.io/chef_server.html). All supporting
   services such as [PostgreSQL](http://www.postgresql.org/),
   [Nginx](http://wiki.nginx.org/Main) and
   [RabbitMQ](http://www.rabbitmq.com/) are bundled in with this installation.
+
+  This template will only function with RackConnect v3.
 
 parameter_groups:
 
