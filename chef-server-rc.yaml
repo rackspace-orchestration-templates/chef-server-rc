@@ -1,7 +1,7 @@
 heat_template_version: 2013-05-23
 
 description: |
-  ####Single Linux server - RCv3
+  #### Single Linux server - RCv3
   Single Linux server with the
   [Chef Server](http://docs.chef.io/chef_server.html). All supporting
   services such as [PostgreSQL](http://www.postgresql.org/),
